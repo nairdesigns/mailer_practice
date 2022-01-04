@@ -6,8 +6,8 @@ class PostMailer < ApplicationMailer
   #   en.post_mailer.post_created.subject
   #
   def post_created
-    @user = params[:user]
-    @post = params[:post]
+    # @user = params[:user]     <------------ neither not wroking
+    # @post = params[:post]
     @greeting = "Hi"
 
     mail(
