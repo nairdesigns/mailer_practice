@@ -8,6 +8,11 @@ class PostMailer < ApplicationMailer
   def post_created
     @greeting = "Hi"
 
-    mail to: "to@example.org"
+    mail(
+      to: "nairbdg@gmail.com",
+      subject: "new post created"
+    )
+
+    # mail to: User.first.email, cc: User.all.pluck(:email), bcc: "secret@corsego.com", subject: "new post created"
   end
 end
